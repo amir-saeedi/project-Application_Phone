@@ -1,0 +1,15 @@
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.section {
+  transition: transform 1s, opacity 1s;
+}
+.sticky {
+  width: 100%;
+  position: fixed;
+  background-color: #fdfdfd !important;
+  z-index: 100;
+  border-bottom: 1px rgb(211, 209, 209) solid;
+  // box-shadow: 1px 1px 0.5px #000;
+}

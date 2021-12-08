@@ -1,0 +1,67 @@
+.Pricing {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 50px;
+  .cards {
+    justify-content: space-around;
+    padding: 40px 0;
+
+    .card {
+      width: 45% !important;
+      &:hover {
+        transition: all 0.5s;
+        box-shadow: -1px -1px 1px #666;
+        transform: translateX(2px) translateY(2px);
+        // transform: translateY(-2px);
+      }
+    }
+    .list_group_numbers {
+      color: #888;
+      font-size: 30px !important;
+    }
+    li {
+      padding: 10px;
+      span {
+        font-weight: bold;
+      }
+    }
+    .card_header {
+      color: #fff;
+      font-size: 32px;
+      font-weight: 200;
+    }
+    .card-footer {
+      background-color: #999;
+      .list_group_btn {
+        padding: 5px 30px;
+        background: #222;
+        color: #fff;
+        box-shadow: -1px -1px 1px #fdfdfd;
+        &:active {
+          transition: all 0.2s;
+          box-shadow: 1px 1px 1px #fdfdfd;
+          background: #888;
+          color: #222;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .Pricing {
+    padding-bottom: 0;
+    p {
+      padding: 0;
+    }
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      .card {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

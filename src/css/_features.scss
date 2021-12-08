@@ -1,0 +1,24 @@
+.Features {
+  text-align: center;
+  width: 100%;
+  background: rgba(rgb(77, 76, 76), 0.8);
+  color: #fff;
+  .item {
+    transition: all 0.5s;
+    .fa {
+      font-size: 45px;
+      padding: 10px;
+    }
+    p {
+      font-size: 15px;
+    }
+    &:hover {
+      transform: translateX(5px);
+      background-color: rgba(#fff, 0.1);
+      border-radius: 50%;
+    }
+  }
+  .owl-nav {
+    display: none;
+  }
+}
