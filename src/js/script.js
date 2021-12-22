@@ -80,10 +80,18 @@ moreText();
 ///////////////////////////
 // Reveal section
 const sections = document.querySelectorAll(".section");
+const articelImg = document.querySelector(".articel_img");
+const articelText = document.querySelector(".articel_text");
 const revealSection = function (entries, observer) {
   const [entry] = entries;
   if (entry.isIntersecting) {
     entry.target.classList.remove("section--hidden");
+    if (entry.target.classList.contains("section_articel")) {
+      articelImg.classList.add("animate__backInLeft");
+      articelImg.classList.add("animate__slow");
+      articelText.classList.add("animate__backInRight");
+      articelText.classList.add("animate__slow");
+    }
     observer.unobserve(entry.target);
   }
 };
