@@ -112,13 +112,15 @@ const stickyNav = function (enteries) {
   const [entry] = enteries;
   if (!entry.isIntersecting) {
     nav.classList.add("sticky");
+    nav.classList.add("animate__fadeInDownBig");
   } else {
     nav.classList.remove("sticky");
+    nav.classList.remove("animate__fadeInDownBig");
   }
 };
 const stackyObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
+  // root: null,
+  // threshold: 0,
+  // rootMargin: `-${navHeight}px`,
 });
 stackyObserver.observe(header);
