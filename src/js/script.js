@@ -119,8 +119,8 @@ const stickyNav = function (enteries) {
   }
 };
 const stackyObserver = new IntersectionObserver(stickyNav, {
-  // root: null,
-  // threshold: 0,
-  // rootMargin: `-${navHeight}px`,
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
 });
 stackyObserver.observe(header);
